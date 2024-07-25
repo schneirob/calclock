@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "calclock"
+version = "0.1.0"
+description = "Create image of calendar and clock for a given time"
+authors = ["Robert Schneider <robert@schnreirob.de>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+datetime = "^5.5"
+python-dateutil = "^2.9.0.post0"
+loguru = "^0.7.2"
+svgutils = "^0.3.4"
+
+[tool.poetry.scripts]
+calclock = "calclock.calclock:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
